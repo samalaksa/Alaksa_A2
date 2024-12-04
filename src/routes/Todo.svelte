@@ -84,17 +84,14 @@ $inspect(todoList);
   .flower-image-container {
       position: fixed; 
       bottom: 0;
-      left: 0;
-      width: 100%;
+      right: 0;
       z-index: -1;
-      text-align: right;
       pointer-events: none; 
   }
 
   .flower-image-container img {
-      width: auto;
-      height: 400px;
-      margin-left: 450px; 
+      width: 400px;
+      height: auto;
       opacity: 20%;
   }
 /* input bar */
@@ -136,7 +133,7 @@ button[type="submit"]:hover {
   }
   
 button {
-    font-family: "Fira Sans", sans-serif;
+    font-family: "Emblema One", system-ui;
     font-weight: 400;
     font-style: normal;
   }
@@ -305,5 +302,18 @@ li:last-child {
 span.done {
     color: #f6d9ee;
     text-decoration: line-through;
+}
+@media (max-width: 600px) {
+    .todo-list-container {
+        max-width: 85%;
+        padding: 15px 20px;
+    }
+}
+
+@media (max-width: 400px) {
+    .todo-list-container {
+        max-width: 100%;
+        padding: 10px 15px;
+    }
 }
 </style>
